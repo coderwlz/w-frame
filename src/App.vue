@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
-import { login } from '@/services'
+// import { login } from '@/services'
 import { ConfigProvider } from 'ant-design-vue'
 
-const init = async () => {
-  let res = await login()
-  console.log(res)
-}
-init()
+// const init = async () => {
+//   let res = await login()
+//   console.log(res)
+// }
+// init()
 
 ConfigProvider.config({
   theme: {

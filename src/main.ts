@@ -5,7 +5,7 @@ import ColorPicker from 'colorpicker-v3' // 注册组件
 import i18n from './language'
 import App from './App.vue'
 import router from './router'
-import '@/mock'
+// import '@/mock'
 import './assets/css/main.less'
 
 import 'ant-design-vue/dist/antd.variable.min.css'
