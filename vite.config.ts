@@ -15,7 +15,6 @@ export default defineConfig({
   },
   // 打包配置
   build: {
-    sourcemap: true, // 输出.map文件
     rollupOptions: {
       // 确保外部化处理那些你不想打包进库的依赖
       external: ['images/logos/mastercard-logo.png','images/logos/visa-logo.png'],
