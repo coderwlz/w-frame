@@ -1,0 +1,112 @@
+// _table.scss
+//
+// Template's tables styles.
+//
+
+// Tables
+.ant-table-thead > tr > th {
+  color: var(--color-gray-7) !important;
+  font-weight: var(--fw-bold) !important;
+  background-color: transparent !important;
+  font-size: 12px;
+}
+.ant-table-thead > tr > th,
+.ant-table-tbody > tr > td {
+  padding: 16px 25px;
+}
+.ant-table-tbody > tr:last-child > td {
+  border-bottom: 0;
+}
+.ant-table-tbody > tr > td h6 {
+  font-size: 14px;
+  font-weight: var(--fw-semibold);
+  color: var(--color-gray-12);
+}
+.ant-table-tbody .ant-progress-bg {
+  height: 3px !important;
+}
+.ant-table-tbody .ant-progress {
+  line-height: 3px;
+  margin-top: 3px;
+  display: block;
+}
+.ant-table-thead
+  > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected)
+  > td,
+.ant-table-tbody
+  > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected)
+  > td,
+.ant-table-thead > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
+.ant-table-tbody > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+.ant-table-content {
+  overflow: auto;
+}
+.table-upload-btn {
+  margin: 20px;
+  margin-top: 10px;
+  .ant-btn {
+    box-shadow: none;
+    font-weight: var(--fw-semibold);
+
+    &:hover svg path,
+    &:focus svg path,
+    &:active svg path {
+      fill: var(--color-primary);
+    }
+  }
+  svg {
+    vertical-align: middle;
+    margin-right: 5px;
+    path {
+      transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+  }
+}
+.ant-table-body {
+  overflow: auto;
+
+  @media (min-width: 1200px) {
+    overflow: visible;
+  }
+
+  .btn-edit {
+    font-weight: var(--fw-semibold);
+    color: var(--color-muted);
+  }
+}
+.table-avatar-info {
+  display: flex;
+
+  .ant-avatar {
+    margin-right: 20px;
+  }
+  .avatar-info {
+    h6 {
+      font-size: 14px;
+      line-height: 14px;
+      margin-bottom: 3px;
+    }
+    p {
+      font-size: 14px;
+      font-weight: var(--fw-regular);
+      color: var(--color-gray-7);
+    }
+    > * {
+      margin: 0;
+    }
+  }
+}
+
+.layout-dashboard-rtl {
+  .ant-table table {
+    text-align: right;
+  }
+  .table-upload-btn svg {
+    vertical-align: middle;
+    margin-left: 5px;
+    margin-right: 0;
+  }
+}
+// / Tables

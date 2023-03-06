@@ -1,0 +1,241 @@
+// layout menu sider
+.ant-layout-sider.sider-primary {
+  width: 250px !important;
+  position: fixed;
+  left: 0;
+  z-index: 99;
+  height: 100vh;
+  overflow: auto;
+  margin: 0;
+  // padding: 13px 20px;
+  background: #ffffff !important;
+  @media (min-width: 992px) {
+    margin: 20px 0 0 20px;
+    // padding: 13px 20px;
+    height: calc(100vh - 20px);
+    background: transparent !important;
+  }
+}
+.layout-dashboard {
+  .ant-layout {
+    @media (min-width: 992px) {
+      margin-left: 270px;
+      // margin-left: 0;
+    }
+  }
+}
+
+.ant-layout-sider-children {
+  padding: 13px 20px;
+  background-color: var(--body-background);
+}
+.ant-layout-has-sider {
+  height: 100vh;
+}
+.logo {
+  position: relative;
+  // top: -20px;
+  text-align: center;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+  font-weight: 600;
+  img {
+    height: 32px;
+    margin-right: 5px;
+  }
+}
+
+.layout-dashboard {
+  background: transparent;
+  text-align: left;
+  position: relative;
+  overflow-x: hidden;
+}
+.layout-dashboard .ant-menu {
+  background: transparent;
+}
+
+.icon {
+  display: inline-flex;
+  width: 32px;
+  height: 32px;
+  color: #bfbfbf;
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgb(0 0 0 / 12%);
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 11px;
+  vertical-align: middle;
+  top: -2px;
+  position: relative;
+}
+.item {
+  background-color: transparent;
+  height: 52px !important;
+  .nav-text {
+    color: #141414;
+  }
+}
+.ant-menu.ant-menu-dark {
+  background-color: transparent !important;
+}
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background-color: #ffffff;
+  box-shadow: 0px 20px 27px rgb(0 0 0 / 5%);
+}
+.ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background-color: transparent;
+}
+.ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background-color: #ffffff !important;
+  box-shadow: 0px 20px 27px rgb(0 0 0 / 5%);
+  font-weight: 600;
+  padding: 10px 16px;
+  color: #141414;
+  border-radius: 8px;
+  .icon {
+    color: #141414;
+    background-color: var(--ant-primary-color);
+  }
+}
+
+.ant-btn.fab {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.12);
+  line-height: 50px;
+  svg {
+    margin: 0;
+  }
+}
+
+// breadcrumb
+.layout-breadcrumb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+}
+.ant-breadcrumb + .ant-page-header-heading {
+  margin-top: 0 !important;
+}
+
+// header css
+.frame-color {
+  width: 22px;
+  height: 22px;
+  background-color: var(--ant-primary-color);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    box-shadow: 0 2px 8px var(--ant-primary-color);
+  }
+}
+.header-control {
+  .switch {
+    svg {
+      width: 24px;
+      height: 24px;
+      color: var(--ant-primary-color);
+      box-shadow: none;
+    }
+  }
+}
+
+.ant-layout-header {
+  background: transparent;
+  height: auto !important;
+  padding: 0 16px !important;
+  // margin: 10px 4px;
+  line-height: inherit !important;
+  border-radius: 12px;
+  transition: 0.2s;
+
+  @media (min-width: 768px) {
+    margin: 10px 20px;
+    padding: 0 !important;
+  }
+}
+
+.sidebar-toggler {
+  display: block;
+}
+
+.btn-sign-in {
+  height: auto;
+  padding: 0 7px;
+  margin: 0;
+  box-shadow: none;
+  color: #8c8c8c;
+  svg {
+    position: relative;
+    top: 5px;
+  }
+}
+
+.header-control {
+  display: flex !important;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-top: 10px;
+  .header-search {
+    width: 200px;
+    margin: 0 7px 0 0;
+    .ant-input {
+      &:not(:first-child) {
+        padding-right: 32px;
+        padding-left: 11px;
+      }
+    }
+  }
+}
+
+.ant-popover-inner-content {
+  padding: 0 !important;
+}
+
+// mask
+.sidebar-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  opacity: 0;
+  pointer-events: none;
+}
+
+// footer
+.copyright {
+  margin: 0;
+  font-weight: var(--fw-semibold);
+  color: var(---color-gray-7);
+  text-align: center;
+
+  svg {
+    width: 16px;
+    height: 16px;
+    vertical-align: -2px;
+    path {
+      fill: var(--color-danger);
+    }
+  }
+  a {
+    font-weight: var(--fw-bold);
+    color: var(--color-gray-12);
+  }
+}
+.ant-layout-footer {
+  background: transparent;
+  padding: 0px 20px 20px 0 !important;
+}

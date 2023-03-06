@@ -1,0 +1,73 @@
+// _chart.scss
+//
+// Template's charts styles.
+//
+
+.dashboard-bar-chart {
+  height: 100%;
+  canvas {
+    border-radius: 8px;
+    box-shadow: var(--shadow-2);
+  }
+  .card-title {
+    margin-top: 24px;
+    h6 {
+      font-weight: var(--fw-bold);
+      margin-bottom: 0;
+      font-size: 16px;
+    }
+    p {
+      font-weight: var(--fw-semibold);
+      color: var(--color-gray-7);
+    }
+    span {
+      font-weight: var(--fw-bold);
+      margin-left: 5px;
+    }
+    .text-success {
+      color: var(--color-success);
+    }
+  }
+  .card-content {
+    p {
+    }
+  }
+  .card-footer {
+    h4 {
+      font-weight: var(--fw-bold);
+      margin-bottom: 0;
+      font-size: 24px;
+    }
+    span {
+      font-weight: var(--fw-semibold);
+    }
+  }
+}
+
+.dashboard-bar-line {
+  height: 100%;
+  .ant-card-extra {
+    .ant-badge {
+      display: block;
+    }
+    .ant-badge-status-dot {
+      width: 20px;
+      height: 4px;
+      border-radius: 5px;
+    }
+    .ant-badge-status-text {
+      font-weight: var(--fw-semibold);
+      color: var(--color-gray-7);
+    }
+    .badge-dot-primary {
+      .ant-badge-status-dot {
+        background-color: var(--color-primary);
+      }
+    }
+    .badge-dot-secondary {
+      .ant-badge-status-dot {
+        background-color: var(--color-secondary);
+      }
+    }
+  }
+}
